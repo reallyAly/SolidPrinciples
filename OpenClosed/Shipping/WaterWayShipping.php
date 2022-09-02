@@ -8,7 +8,7 @@ declare(strict_types=1);
 class WaterWayShipping extends AbstractShipping
 {
     /**
-     * @return float
+     * @inheritDoc
      */
     public function getCost(Order $order): float
     {
