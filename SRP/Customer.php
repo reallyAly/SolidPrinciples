@@ -17,6 +17,11 @@ class Customer
     private int $customerSince;
 
     /**
+     * @var Address[]
+     */
+    private array $addresses;
+
+    /**
      * @return string
      */
     public function getName(): string
@@ -25,11 +30,41 @@ class Customer
     }
 
     /**
-     * @param string $name
+     * @return array
      */
-    public function setName(string $name): void
+    public function getAddresses(): array
+    {
+        return $this->addresses;
+    }
+
+    /**
+     * @param array $addresses
+     * @return Customer
+     */
+    public function setAddresses(array $addresses): Customer
+    {
+        $this->addresses = $addresses;
+        return $this;
+    }
+
+    /**
+     * @param Address $address
+     * @return $this
+     */
+    public function addAddress(Address $address): Customer
+    {
+        $this->addresses[] = $address;
+        return $this;
+    }
+
+    /**
+     * @param string $name
+     * @return Customer
+     */
+    public function setName(string $name): Customer
     {
         $this->name = $name;
+        return $this;
     }
 
     /**
@@ -42,10 +77,12 @@ class Customer
 
     /**
      * @param string $phone
+     * @return $this
      */
-    public function setPhone(string $phone): void
+    public function setPhone(string $phone): Customer
     {
         $this->phone = $phone;
+        return $this;
     }
 
     /**
@@ -58,9 +95,11 @@ class Customer
 
     /**
      * @param int $customerSince
+     * @return $this
      */
-    public function setCustomerSince(int $customerSince): void
+    public function setCustomerSince(int $customerSince): Customer
     {
         $this->customerSince = $customerSince;
+        return $this;
     }
 }
