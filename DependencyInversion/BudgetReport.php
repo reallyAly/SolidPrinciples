@@ -8,9 +8,9 @@ declare(strict_types=1);
 class BudgetReport
 {
     /**
-     * @var MYSQLDatabase
+     * @var DatabaseInterface
      */
-    private MYSQLDatabase $database;
+    private DatabaseInterface $database;
 
     /**
      * @return void
