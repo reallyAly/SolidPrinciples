@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 /**
- * Combustion car
+ * CombustionCar class
  */
-class CombustionCar implements CarInterface
+class CombustionCar implements CombustionEngineInterface
 {
     /**
      * @inheritDoc
@@ -13,13 +13,5 @@ class CombustionCar implements CarInterface
     public function toFuel(): void
     {
         // TODO: Implement toFuel() method.
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function recharge(): void
-    {
-        // TODO: Implement recharge() method.
     }
 }

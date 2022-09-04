@@ -3,18 +3,10 @@
 declare(strict_types=1);
 
 /**
- * Electric Car
+ * ElectricCar class
  */
-class ElectricCar implements CarInterface
+class ElectricCar implements ElectricEngineInterface
 {
-    /**
-     * @inheritDoc
-     */
-    public function toFuel(): void
-    {
-        // TODO: Implement toFuel() method.
-    }
-
     /**
      * @inheritDoc
      */

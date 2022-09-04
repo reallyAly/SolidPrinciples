@@ -3,17 +3,10 @@
 declare(strict_types=1);
 
 /**
- * Car Interface
+ * ElectricEngineInterface Interface
  */
-interface CarInterface
+interface ElectricEngineInterface
 {
-    /**
-     * Fuel the car
-     *
-     * @return void
-     */
-    public function toFuel(): void;
-
     /**
      * Recharge the battery
      *
