@@ -1,2 +1,2 @@
 # SolidPrinciples
-Repository created to practice SOLID principles
+Repository created to review SOLID concepts
