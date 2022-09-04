@@ -22,14 +22,4 @@ class Document
     {
         // Do something to open a document
     }
-
-    /**
-     * Method to save a document
-     *
-     * @return void
-     */
-    public function save(): void
-    {
-        // Do something to save a document
-    }
 }
